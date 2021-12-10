@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'componente-hijo',
   templateUrl: './componente-hijo.component.html',
   styleUrls: ['./componente-hijo.component.css'],
 })
-export class ComponenteHijoComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
+export class ComponenteHijoComponent {
+  @Output() newItemEvent = new EventEmitter<string>();
+  agregarNuevoElemento(value: string) {
+    this.newItemEvent.emit(value);
+  }
 }

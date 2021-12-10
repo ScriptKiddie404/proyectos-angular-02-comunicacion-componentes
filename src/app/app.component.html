@@ -1,4 +1,7 @@
 <div class="padre">
     <h1>Padre</h1>
+    <ul *ngIf="checkList()">
+        <li *ngFor="let item of lista"></li>
+    </ul>
     <componente-hijo></componente-hijo>
 </div>

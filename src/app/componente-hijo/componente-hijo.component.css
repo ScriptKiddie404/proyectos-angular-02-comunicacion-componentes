@@ -9,3 +9,34 @@
   border-radius: 10px;
   margin-top: 3em;
 }
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.input-container button {
+  margin-top: 1em;
+}
+
+.input-container input {
+  border: none;
+  padding: 0.5em;
+}
+
+.input-container input:focus {
+  outline: none;
+}
+
+.input-container button {
+  padding: 0.5em;
+  background-color: black;
+  color: White;
+}
+
+.input-container button:hover {
+  cursor: pointer;
+}
