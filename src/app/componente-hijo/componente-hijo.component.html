@@ -1,10 +1,8 @@
 <div class="hijo">
     <h1>Hijo</h1>
-    <form>
-        <div class="input-container">
-            <label for="elemento"></label>
-            <input type="text" id="elemento" #nuevoItem>
-            <button (click)="agregarNuevoElemento(nuevoItem.value)">Agregar</button>
-        </div>
-    </form>
+    <div class="input-container">
+        <label for="elemento"></label>
+        <input type="text" id="elemento" #nuevoItem>
+        <button (click)="agregarNuevoElemento(nuevoItem.value)">Agregar</button>
+    </div>
 </div>
